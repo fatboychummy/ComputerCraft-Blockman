@@ -50,3 +50,5 @@ term.setBackgroundColor(colours.black)
 term.setTextColor(colours.white)
 term.setCursorPos(1, 1)
 term.clear()
+
+print("Please edit blockman.lua and set peripheral names for the code to function properly.")
