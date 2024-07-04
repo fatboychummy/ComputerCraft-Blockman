@@ -608,7 +608,7 @@ local function changeTrack()
     displayphrase = "Loading Track..."
     refreshGrey()
     decoder = dfpwm.make_decoder()
-    audiohandle = http.get(musicdata[albumplaying][trackplaying]["tracklink"])
+    audiohandle = http.get(musicdata[albumplaying][trackplaying]["tracklink"], nil, true)
     if audiohandle then
         getDuration()
         displayphrase = " "
